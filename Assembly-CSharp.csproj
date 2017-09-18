@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{F103F4A4-1644-D8DC-5023-16DF12DB4570}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Chart and Graph\Prefabs\Canvas\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\AbstractChartData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\AnyChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Attributes\CanvasAttribute.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Attributes\NonCanvasAttribute.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Attributes\SimpleAttribute.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\AutoFloat.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\AxisBase.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\AxisFormat.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\AxisGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\CanvasAxisGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\ChartDivisionInfo.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\ChartMainDivisionInfo.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\ChartSubDivisionInfo.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\HorizontalAxis.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\IAxisGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Axis\VerticalAxis.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\AxisChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\BarChart\BarChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\BarChart\BarData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\BarChart\BarGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\BarChart\BarInfo.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\BarChart\BarMaterialFit.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\BarChart\BarMesh.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\BarChart\BarMeshGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\BarChart\IBarGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\BarChart\WorldSpaceBarChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Candle Chart\CandleChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Candle Chart\CandleChartData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Candle Chart\CanvasBarChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Candle Chart\CanvasCandle.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Candle Chart\CanvasCandleGraphic.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Candle Chart\ICandleCreator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Candle Chart\WorldSpaceCandle.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Canvas\CanvasLines.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Canvas\CanvasLinesHover.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Canvas\SensitivityControl.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartAdancedSettings.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartCommon.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartDateUtility.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartDivisionSide.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartDynamicMaterial.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartItem\CharItemEffectController.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartItem\ChartItemEffect.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartItem\ChartItemEvents.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartItem\ChartItemGrowEffect.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartItem\ChartItemLerpEffect.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartItem\ChartItemMaterialLerpEffect.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartItem\ChartItemTextBlend.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartMaterialController.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartOrientation.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\ChartOrientedSize.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Common\ChartItem.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Common\ChartItemIndex.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Common\DoubleVector2.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Common\DoubleVector3.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Common\DoubleVector4.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Common\ICanvas.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\DataSource\ChartColumnCollection.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\DataSource\ChartDataColumn.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\DataSource\ChartDataItemBase.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\DataSource\ChartDataRow.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\DataSource\ChartDataSourceBase.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\DataSource\ChartDataSourceBaseCollection.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\DataSource\ChartRowCollection.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\DataSource\ChartSparseDataSource.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\DataSource\IDataItem.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Exceptions\ChartDuplicateNameException.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Exceptions\ChartException.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Exceptions\ChartItemNotExistException.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\GraphChart\GraphChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\GraphChart\GraphChartBase.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\GraphChart\GraphData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\GraphChart\WorldSpaceGraphChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\IInternalUse.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\InternalUseInterfaces\IInternalBarData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\InternalUseInterfaces\IInternalCandleData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\InternalUseInterfaces\IInternalGraphData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\InternalUseInterfaces\IInternalPieData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\InternalUseInterfaces\IInternalSettings.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\InternalUseInterfaces\InternalItemEvents.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Legened\CanvasLegend.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Legened\CanvasLegendItem.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\LegenedInfo.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\MaterialTiling.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Mesh\CanvasChartMesh.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Mesh\ChartMeshBase.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Mesh\IChartMesh.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Mesh\WorldSpaceChartMesh.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\MeshDimention.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\MonoBehaviours\ChartSettingItemBase.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Path\BoxPathGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Path\CustomPathGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Path\CylinderPathGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Path\FillPathGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Path\LineRendererPathGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Path\PathGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Path\PathMultiplier.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Path\SmoothPathGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\PieChart\CanvasPieChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\PieChart\IPieGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\PieChart\PieCanvasGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\PieChart\PieChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\PieChart\PieData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\PieChart\PieMesh.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\PieChart\WorldSpacePieChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\PieChart\WorldSpacePieGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\RadarChart\CanvasRadarChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\RadarChart\IInternalRadarData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\RadarChart\RadarChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\RadarChart\RadarChartData.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\RadarChart\RadarFill.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\RadarChart\RadarFillGenerator.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\RadarChart\WorldSpaceRadarChart.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\AlignedItemLabels.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\BillboardText.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\CategoryLabels.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\ChartLabelAlignment.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\GroupLabelAlignment.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\GroupLabels.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\ItemLabels.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\ItemLabelsBase.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\TextController.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\TextDirection.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Text\TextFormatting.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Utils\Animation\BarAnimation.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Utils\Animation\GraphAnimation.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Utils\Animation\PieAnimation.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Utils\InfoBox\InfoBox.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Utils\Multiple Graph Demo\MultipleGraphDemo.cs" />
+     <Compile Include="Assets\Chart and Graph\Script\Utils\Simple Graph Demo\SimpleGraphDemo.cs" />
+     <Compile Include="Assets\Chart and Graph\Themes\Demo\SelectScene.cs" />
+     <Compile Include="Assets\Chart and Graph\Tutorials\Bar\BarChartFeed.cs" />
+     <Compile Include="Assets\Chart and Graph\Tutorials\Bubble Graph\BubbleGraphFeed.cs" />
+     <Compile Include="Assets\Chart and Graph\Tutorials\Graph\GraphChartFeed.cs" />
+     <Compile Include="Assets\Chart and Graph\Tutorials\Large Data Graph\LargeDataFeed.cs" />
+     <Compile Include="Assets\Chart and Graph\Tutorials\Pie\PieChartFeed.cs" />
+     <Compile Include="Assets\Chart and Graph\Tutorials\Radar\RadarChartFeed.cs" />
+     <Compile Include="Assets\Chart and Graph\Tutorials\Stream Graph\StreamingGraph.cs" />
+     <Compile Include="Assets\FirebaseIntegration.cs" />
+     <Compile Include="Assets\Graph1.cs" />
+     <Compile Include="Assets\Graph1Behaviour.cs" />
+     <None Include="Assets\Chart and Graph\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
+     <None Include="Assets\Chart and Graph\Shaders\GradientWorldSpace.shader" />
+     <None Include="Assets\Chart and Graph\Themes\Common\Materials\pie-1\StandardCullOff.shader" />
+     <None Include="Assets\Firebase\Plugins\link.xml" />
+     <None Include="Assets\Chart and Graph\Themes\Common\Textures\cc0-license\License.txt" />
+     <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
+     <None Include="Assets\Firebase\Editor\FirebaseAuth_v4.1.0_manifest.txt" />
+     <None Include="Assets\Chart and Graph\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\Chart and Graph\Shaders\GradientCanvas.shader" />
+     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.45.0.txt" />
+     <None Include="Assets\Chart and Graph\Themes\Common\Materials\bar-3\StandardCullOff.shader" />
+     <None Include="Assets\Chart and Graph\Shaders\GradientWorldSpaceOutline.shader" />
+     <None Include="Assets\Chart and Graph\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\Chart and Graph\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
+     <None Include="Assets\Chart and Graph\Themes\3d\Pie\Theme 5\Materials\StandardCullOff.shader" />
+     <None Include="Assets\Chart and Graph\Themes\Common\Materials\pie-3d-3\StandardCullOff.shader" />
+     <None Include="Assets\Firebase\Editor\FirebaseDatabase_v4.1.0_manifest.txt" />
+     <None Include="Assets\Firebase\Plugins\Http\link.xml" />
+     <None Include="Assets\Chart and Graph\Themes\Common\Materials\bar-1\StandardCullOff.shader" />
+     <None Include="Assets\Chart and Graph\Themes\Common\Meshes\cc0-license\License.txt" />
+     <None Include="Assets\Chart and Graph\Shaders\SolidCanvasShader.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.App">
+ <HintPath>C:/Users/sarve/OneDrive/Documents/VitechDataVisualization/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Auth">
+ <HintPath>C:/Users/sarve/OneDrive/Documents/VitechDataVisualization/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Database">
+ <HintPath>C:/Users/sarve/OneDrive/Documents/VitechDataVisualization/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.MiniJson">
+ <HintPath>C:/Users/sarve/OneDrive/Documents/VitechDataVisualization/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.Sharpen">
+ <HintPath>C:/Users/sarve/OneDrive/Documents/VitechDataVisualization/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Compat">
+ <HintPath>C:/Users/sarve/OneDrive/Documents/VitechDataVisualization/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Tasks">
+ <HintPath>C:/Users/sarve/OneDrive/Documents/VitechDataVisualization/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
